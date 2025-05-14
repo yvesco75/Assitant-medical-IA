@@ -4,25 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assistant Médical IA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Assistant Médical Virtuel</h1>
-            <p class="disclaimer">Cet assistant peut vous aider à trouver le bon spécialiste, mais ne remplace pas un avis médical professionnel.</p>
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <h1>Assistant Médical Virtuel</h1>
+                </div>
+                <p class="disclaimer">Cet assistant peut vous aider à trouver le bon spécialiste, mais ne remplace pas un avis médical professionnel.</p>
+            </div>
         </header>
         
         <div class="chat-container">
             <div id="chat-messages">
                 <div class="message ai">
-                    Bonjour ! Je suis votre assistant médical virtuel. Décrivez vos symptômes et je vous aiderai à trouver le spécialiste approprié.
+                    <div class="avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="content">
+                        <div class="name">Assistant IA</div>
+                        <div class="text">Bonjour ! Je suis votre assistant médical virtuel. Décrivez vos symptômes et je vous aiderai à trouver le spécialiste approprié.</div>
+                        <div class="time">Aujourd'hui, 10:00</div>
+                    </div>
                 </div>
             </div>
             
             <div class="input-area">
                 <textarea id="user-input" placeholder="Décrivez vos symptômes ici..."></textarea>
-                <button id="send-button">Envoyer</button>
+                <button id="send-button">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
             </div>
         </div>
     </div>
