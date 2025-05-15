@@ -44,7 +44,7 @@ async function getGroqAIRecommendation(userMessage, conversationId) {
     const response = await axios.post('https://api.groq.com/openai/v1/chat/completions', {
       model: "meta-llama/llama-4-scout-17b-16e-instruct",
       messages: messages,
-      max_tokens: 200,
+      max_tokens: 300,
       temperature: 0.7
     }, {
       headers: {
